@@ -133,7 +133,7 @@ nav ul li a{
     color: #474747;
 }
 /* -----------------------------
-        Do part start
+        Skills part start
 ------------------------------*/
 .skills{
     /* text-align: center; */
@@ -265,4 +265,38 @@ footer textarea{
 }
 .adjust{
     margin-right: 45px;
+}
+
+
+/* Responsive Media Query */
+
+@media screen and (max-width: 576px) {
+    .skill-items{
+        flex-direction: column;
+    }
+    .resume-container{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-col{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"]{
+        width: calc(100% - 40px);
+        padding: 18px 0 18px 30px;
+    }
+    footer textarea{
+        width: calc(100% - 40px);
+        padding: 18px 0 18px 30px;
+    }
+    .about{
+        padding: 20px 10px;
+    }
+    .about-items{
+        flex-direction: column;
+        gap: 15px;
+    }
 }
